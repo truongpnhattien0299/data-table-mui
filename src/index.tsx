@@ -1,10 +1,13 @@
-import * as React from 'react'
-import styles from './styles.module.css'
+import React from 'react'
+import DataTable from './components/data-table'
+import { ColumnTableProps } from './components/types'
 
 interface Props {
-  text: string
+  columns: Array<ColumnTableProps>
+  rows: any
 }
 
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+export const Table: React.FC<Props> = (props) => {
+  const { columns, rows, ...rest } = props
+  return <DataTable columns={columns} rows={rows} {...rest} />
 }
