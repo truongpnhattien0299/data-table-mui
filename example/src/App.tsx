@@ -1,8 +1,10 @@
 import React from 'react'
 
 import { Table } from 'data-table-mui'
-import 'data-table-mui/dist/index.css'
+import './index.css'
 import { ColumnTableProps } from 'data-table-mui/dist/components/types'
+import ThemeConfig from './theme'
+import GlobalStyles from './theme/globalStyles'
 
 const App = () => {
   const columns: ColumnTableProps[] = [
@@ -15,7 +17,12 @@ const App = () => {
     }
   ]
   const rows = [{ stt: 1 }, { stt: 2 }, { stt: 3 }, { stt: 4 }]
-  return <Table columns={columns} rows={rows} />
+  return (
+    <ThemeConfig>
+      <GlobalStyles />
+      <Table columns={columns} rows={rows} />
+    </ThemeConfig>
+  )
 }
 
 export default App

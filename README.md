@@ -15,12 +15,12 @@ npm install --save data-table-mui
 ```tsx
 import React, { Component } from 'react'
 
-import MyComponent from 'data-table-mui'
-import 'data-table-mui/dist/index.css'
+import { Table } from 'data-table-mui'
+// import 'data-table-mui/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <Table columns={columns} rows={rows} />
   }
 }
 ```

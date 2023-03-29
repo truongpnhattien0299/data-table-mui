@@ -1,6 +1,6 @@
 {
-  "name": "data-table-mui",
-  "version": "1.0.0",
+  "name": "@f5seconds/data-table-mui",
+  "version": "1.0.1",
   "description": "Made with create-react-library",
   "author": "truongpnhattien0299",
   "license": "MIT",
@@ -27,6 +27,8 @@
     "react": "^16.0.0"
   },
   "devDependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",

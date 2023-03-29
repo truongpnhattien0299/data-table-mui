@@ -29,7 +29,7 @@ interface Sort {
   column: string;
   order: 'asc' | 'desc';
 }
-interface Props {
+export interface Props {
   columns: Array<ColumnTableProps>;
   rows: Array<Row>;
   height?: number;
